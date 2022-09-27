@@ -1,11 +1,5 @@
-import Button from "./components/Button";
-
 function App() {
-  return (
-    <div className="App">
-      <Button />
-    </div>
-  );
+    return <h1 className="App">Hello ReactJS </h1>;
 }
 
 export default App;
