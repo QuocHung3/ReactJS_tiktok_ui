@@ -2,6 +2,10 @@
 
 :root {
     --primary-color: #fe2c44;
+    --black: #000;
+    --white: #eee;
+
+    --text-color: #333;
 
     --default-layout-header-height: 60px;
     --default-layout-width: 1150px;
@@ -21,4 +25,16 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem;
     line-height: 1.5;
+}
+
+button,
+input,
+[tabindex] {
+    border: none;
+    outline: none;
+}
+
+a[href] {
+    color: var(--text-color);
+    text-decoration: none;
 }
