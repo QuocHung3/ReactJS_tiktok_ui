@@ -1,9 +1,10 @@
 @import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 :root {
     --primary-color: #fe2c44;
     --black: #000;
-    --white: #eee;
+    --white: #fff;
 
     --text-color: #333;
 
@@ -22,7 +23,7 @@ html {
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.6rem;
     line-height: 1.5;
 }
