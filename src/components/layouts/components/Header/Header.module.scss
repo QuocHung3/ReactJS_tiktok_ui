@@ -60,9 +60,6 @@
     }
 }
 
-.search-result {
-}
-
 .search-title {
     color: rgba(22, 24, 35, 0.5);
     font-size: 1.4rem;
@@ -94,4 +91,11 @@
     &:active {
         background-color: rgba(22, 24, 35, 0.06);
     }
+}
+
+.more-btn {
+    font-size: 2rem;
+    margin-left: 28px;
+    background-color: transparent;
+    padding: 4px 8px;
 }
