@@ -3,7 +3,6 @@ import classNames from 'classnames/bind';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faCircleQuestion,
-    faCloudUpload,
     faCircleXmark,
     faEarthAsia,
     faEllipsisVertical,
@@ -26,6 +25,8 @@ import AccountItem from '~/components/AccountItem';
 import styles from './Header.module.scss';
 import Button from '~/components/Button';
 import Menu from '~/components/Popper/Menu';
+import Image from '~/components/Image';
+import { InboxIcon, MessageIcon, UpLoadIcon } from '~/components/Icons';
 
 const cx = classNames.bind(styles);
 const MENU_ITEMS = [
@@ -145,9 +146,21 @@ function Header() {
                 <div className={cx('actions')}>
                     {currentUser ? (
                         <>
-                            <Tippy delay={[0, 200]} content="Upload video" placement="bottom">
+                            <Tippy delay={[500, 0]} content="Upload video" placement="bottom">
                                 <button className={cx('action-btn')}>
-                                    <FontAwesomeIcon icon={faCloudUpload} />
+                                    <UpLoadIcon />
+                                </button>
+                            </Tippy>
+
+                            <Tippy delay={[500, 0]} content="Message" placement="bottom">
+                                <button className={cx('action-btn')}>
+                                    <MessageIcon />
+                                </button>
+                            </Tippy>
+
+                            <Tippy delay={[500, 0]} content="Inbox" placement="bottom">
+                                <button className={cx('action-btn')}>
+                                    <InboxIcon />
                                 </button>
                             </Tippy>
                         </>
@@ -160,7 +173,7 @@ function Header() {
 
                     <Menu items={currentUser ? userMenu : MENU_ITEMS} onChange={handleMenuChange}>
                         {currentUser ? (
-                            <img
+                            <Image
                                 alt="Nguyen Van A"
                                 src="https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-aiso/65d3c6b1d1e205c75536ccf1f26d552d~c5_100x100.jpeg?x-expires=1665061200&x-signature=6rjPm9Ybm6AXqdDC2lKFzY9626Y%3D"
                                 className={cx('user-avatar')}
