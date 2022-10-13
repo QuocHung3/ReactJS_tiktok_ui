@@ -1,4 +1,4 @@
-import routesConfig from '~/config/routes';
+import config from '~/config';
 
 import Home from '~/pages/Home';
 import Following from '~/pages/Following';
@@ -8,11 +8,11 @@ import Upload from '~/pages/Upload';
 
 //public routes
 const publicRoutes = [
-    { path: routesConfig.home, component: Home },
-    { path: routesConfig.following, component: Following },
-    { path: routesConfig.profile, component: Profile },
-    { path: routesConfig.upload, component: Upload, layout: null },
-    { path: routesConfig.search, component: Search, layout: null },
+    { path: config.routes.home, component: Home },
+    { path: config.routes.following, component: Following },
+    { path: config.routes.profile, component: Profile },
+    { path: config.routes.upload, component: Upload, layout: null },
+    { path: config.routes.search, component: Search, layout: null },
 ];
 
 const privateRoutes = [];
