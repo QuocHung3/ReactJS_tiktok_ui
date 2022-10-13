@@ -42,6 +42,86 @@ const MENU_ITEMS = [
                     code: 'vi',
                     title: 'VietNam',
                 },
+                {
+                    type: 'language',
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    type: 'language',
+                    code: 'vi',
+                    title: 'VietNam',
+                },
+                {
+                    type: 'language',
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    type: 'language',
+                    code: 'vi',
+                    title: 'VietNam',
+                },
+                {
+                    type: 'language',
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    type: 'language',
+                    code: 'vi',
+                    title: 'VietNam',
+                },
+                {
+                    type: 'language',
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    type: 'language',
+                    code: 'vi',
+                    title: 'VietNam',
+                },
+                {
+                    type: 'language',
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    type: 'language',
+                    code: 'vi',
+                    title: 'VietNam',
+                },
+                {
+                    type: 'language',
+                    code: 'vi',
+                    title: 'VietNam',
+                },
+                {
+                    type: 'language',
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    type: 'language',
+                    code: 'vi',
+                    title: 'VietNam',
+                },
+                {
+                    type: 'language',
+                    code: 'vi',
+                    title: 'VietNam',
+                },
+                {
+                    type: 'language',
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    type: 'language',
+                    code: 'vi',
+                    title: 'VietNam',
+                },
             ],
         },
     },
@@ -53,6 +133,30 @@ const MENU_ITEMS = [
     {
         icon: <FontAwesomeIcon icon={faKeyboard} />,
         title: 'Keyboard shortcuts',
+    },
+];
+
+const userMenu = [
+    {
+        icon: <FontAwesomeIcon icon={faUser} />,
+        title: 'View profile',
+        to: '/@hoaa',
+    },
+    {
+        icon: <FontAwesomeIcon icon={faCoins} />,
+        title: 'Get coin',
+        to: '/coin',
+    },
+    {
+        icon: <FontAwesomeIcon icon={faGear} />,
+        title: 'Settings',
+        to: '/settings',
+    },
+    {
+        icon: <FontAwesomeIcon icon={faSignOut} />,
+        title: 'Log out',
+        to: '/logout',
+        separate: true,
     },
 ];
 
@@ -70,30 +174,6 @@ function Header() {
             //
         }
     };
-
-    const userMenu = [
-        {
-            icon: <FontAwesomeIcon icon={faUser} />,
-            title: 'View profile',
-            to: '/@hoaa',
-        },
-        {
-            icon: <FontAwesomeIcon icon={faCoins} />,
-            title: 'Get coin',
-            to: '/coin',
-        },
-        {
-            icon: <FontAwesomeIcon icon={faGear} />,
-            title: 'Settings',
-            to: '/settings',
-        },
-        {
-            icon: <FontAwesomeIcon icon={faSignOut} />,
-            title: 'Log out',
-            to: '/logout',
-            separate: true,
-        },
-    ];
 
     return (
         <header className={cx('wrapper')}>
