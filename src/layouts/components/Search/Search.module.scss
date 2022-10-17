@@ -19,6 +19,7 @@
         background-color: transparent;
         caret-color: var(--primary-color);
         font-family: var(--font-family);
+        padding-right: 40px;
     }
 
     input:not(:placeholder-shown) ~ .search-btn {
